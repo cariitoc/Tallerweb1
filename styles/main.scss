@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    width: 12em;
+    height: 3.5em;
+    background: #E1AC33;
+    border-radius: 1.4em;
+    border: 0;
+    transition: all .5s ease;
+    
+}
+
+.button:hover{
+    background: #B77A00;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    
+    &__list{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        font-family:"Helvetica Nue";
+    }
+    
+    &__element{
+        text-decoration: none;
+        display: flex;
+        a{
+            display: inline;
+            padding: 2.5em 1em;
+            color: gray;
+            justify-content: center;
+            list-style: none;
+            text-align: center;
+            transition: all .5s ease;
+            max-height: 6em;
+            font-family: "Helvetica";
+            
+        }
+        
+        a:hover{
+            color: white;
+            border-bottom: 5px solid white;
+        }
+    }
+}
+
+.nav__element:active{
+    text-decoration: underline;
+    color: white;
+    text-decoration: underline;
+}
+
+.logo{
+    height: 4em;
+    margin:0.7em 4em; 
+}
+
+
+.banner{
+    
+    &__video{
+        position: absolute;
+        padding-left:25%;
+        padding-right: 21.6%;
+        background: black; 
+        video{
+            
+            width: 45em;
+            max-height: 50em;
+            
+        }
+    }
+    
+    &__descripcion{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-top: 3em;
+        padding-bottom: 4.5em;
+        
+    }
+    
+    &__info{  
+        width: 45%;
+        padding-left: 4em;
+    }
+    
+    &__title{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        padding-bottom: 1.5em;
+        color: #E1AC33;
+        
+        
+        @font-face {
+            font-family: "NIRVANA";
+            src: url("nirvana.ttf");
+        }
+        
+        p {     
+            font-family: "NIRVANA";
+            font-size: 460%;
+        }
+        
+        .card{
+            font-size: 190%;
+            padding-top: 1.3em;
+            padding-left: 0.7em;
+            font-family: Arial, Helvetica;
+        }    
+        
+    }
+    
+    &__descript{
+        color: white;
+        
+        h2{            
+            font-size: 170%;
+            padding-bottom: 1em;
+        }
+        
+        p{ 
+            width: 19em;
+            padding-bottom: 1em;
+            font-size: 1.3em;
+        }
+        
+        button{  
+            font-size: 100%;
+            color: black;        
+        }
+    }
+    
+    &__img{
+        width: 10em;
+        
+    }
+}
+
+
+.specificaciones{
+    
+    display: flex;
+    background: black;
+    padding: 8em 9.5em;  
+    justify-content: space-between;
+    
+    &__table{
+        background: #252223;
+        color: white;
+        width: 20em;
+        height: 27em;
+        padding: 5em;
+        border-radius: 30px;
+        justify-content: space-between;
+    }
+    
+    .table--black{
+        background: #252223;
+    }
+    
+    .table--gray{
+        background: #989898;
+    }
+    
+    .table--yellow{
+        background: #905D00;
+    }   
+}
+
+.benefits{
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/back.png");
+    background-size: cover;
+    padding: 160px 0;
+    height: 100%;
+    
+    &__info{  
+        background: #989898; 
+        color: white;
+        width:18em;
+        height: 26em;
+        border-radius: 30px;
+        
+        
+        img{
+            width:10em;
+            margin: 2em 4em;
+        }
+        
+        h1{
+            background: green;
+        }
+    }   
+}
+
+.publicidad{
+    
+    display: flex;
+    background: #A48222;
+    
+    &__info{
+        color: white;
+        width: 30%;
+        padding-left: 3em;
+        margin: 5em;  
+        background: red;
+        
+    }
+    
+    h1{
+        margin-left: 3em;
+        padding-bottom: 1em;
+        background: forestgreen;
+    }
+    
+    p{
+        padding-bottom: 1em;
+        background: fuchsia;
+        width: 10em;
+        
+        text-align: center;
+    }
+    
+    .button{
+        background: white;
+        font-size: 100%;
+    }
+    
+    &__img{
+        padding:0 0.5em; 
+        margin: 1.5em 0;
+    }
+}
+
+.map{
+    display: flex;
+    background: black;
+    flex-direction: column;
+    
+    &__img{
+        padding: 1em 5em;
+    }
+    
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 3em;
+        
+        justify-content: space-between;
+        background: darkblue;
+    }
+    
+    &__list{
+        padding: 0;
+    }
+    
+    &__list li:first-of-type{
+        margin-bottom: 10px;
+        
+        
+    }
+    
+    &__list:li{
+        padding-bottom: 0.3em;
+        width: 7em;
+        
+    }
+    
+    li{
+        background: fuchsia;  
+        padding: 0;
+        list-style-type: none;
+        width: 7em;
+    }
+    
+    &__element {
+        color: white;
+        font-size: 0.8em;    
+        
+    }
+    
+    &__icon{     
+        display: flex;
+        flex-direction: row;
+        width: 7em;
+        margin: 1em 0;
+        align-self: center;
+        background: gray;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    &__final{
+        text-align: center;
+        width: 100%;
+        color: white;
+        padding-bottom: 2em;  
+    }    
+}
+
+.logoFinal{
+    width: 14em;
+}
+
+
+
+
