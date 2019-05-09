@@ -13,6 +13,24 @@ app.use(express.static('public'));
 app.engine('handlebars', motorRender());
 app.set('view engine', 'handlebars');
 
+
+const MongoClient = require("mongodb").MongoClient;
+const test = require("assert");
+// Connection url
+const url = "mongodb://localhost:27017";
+// Database Name
+const dbName = "tienda";
+var database;
+
+// Connect using MongoClient
+MongoClient.connect(url, function(err, client) {
+    database = client.db(dbName);
+
+  //client.close();
+});
+
+
+
 var productos = [];
 productos.push({
     titulo: 'nevermine',
@@ -32,8 +50,18 @@ productos.push({
 // configurar la ruta inicial
 
 // configurar la ruta portafolio
-app.get('/tiendanp', function(request, response){
-    response.send('Mi tienda');
+app.get('/tienda', function(request, response){
+
+    
+  let coleccion = database.collection("productos");
+  
+  coleccion.find({}).toArray(function(err, items) {
+    test.equal(null, err);
+    items.forEach(function(item) {
+      console.log(item);
+    });
+  });
+    response.render('tienda', productos[0]);
 });
 
 // iniciar el servidor en el puerto 3000
