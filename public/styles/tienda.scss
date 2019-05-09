@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Helvetica"; 
+}
+
+.centrarContenido{
+    max-width:1380px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    width: 12em;
+    height: 3.5em;
+    background: #E1AC33;
+    border-radius: 1.4em;
+    border: 0;
+    transition: all .5s ease;
+}
+
+.button:hover{
+    background: #B77A00;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: black;
+    
+    &__list{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        font-family:"Helvetica Nue";
+    }
+    
+    &__element{
+        text-decoration: none;
+        display: flex;
+        
+        a{
+            display: inline;
+            padding: 2.5em 1em;
+            color: gray;
+            justify-content: center;
+            list-style: none;
+            text-align: center;
+            transition: all .5s ease;
+            max-height: 6em;
+            font-family: "Helvetica";
+            
+        }
+        
+        a:hover{
+            color: white;
+            border-bottom: 5px solid white;
+        }
+    }
+}
+
+.nav__element:active{
+    text-decoration: underline;
+    color: white;
+    text-decoration: underline;
+}
+
+.logo{
+    height: 4em;
+    margin:0.7em 4em; 
+}
+
+
+.banner{
+    background: black;
+    //-- background: url("/public/images/back.png");--//
+    
+    
+    &__section{
+        
+        &__h1{
+            color: white;
+            font-family: "Helvetica";
+            font-size: 4em;
+            padding: 0.2em 3em 0.2em 1em;
+            background: #B77A00;
+        }
+    }
+    
+    
+    &__title{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        padding-bottom: 1.5em;
+        color: #E1AC33;
+    }
+    
+    &__descripcion{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding-top: 1em;
+        
+    }
+    
+    &__info{  
+        background: rgba(255, 255, 255, 0.562);
+        width: 25%;
+        margin: 0 1em 5em 4em;
+        border: none;
+        border-radius: 2.5em;
+    }
+    
+    
+    &__descript{
+        padding: 2em 3em 2em 3em;
+        color: white;
+        font-family: "NIRVANA";
+        h2{    
+            font-family: "NIRVANA";        
+            font-size: 100%;
+            padding-bottom: 1em;
+            @font-face {
+                font-family: "NIRVANA";
+                src: url("./NIRVANA.TTF");
+                
+            }
+            
+        }
+        
+        p{ 
+            width: 19em;
+            padding-bottom: 1em;
+            font-size: 50%;
+        }
+        
+        button{  
+            font-size: 100%;
+            color: black;        
+        }
+    }
+    
+    &__img{
+        background: rgba(255, 255, 255, 0.562);
+        display: flex;
+        flex-direction: row;
+        width: 48em;
+        flex-wrap: wrap;
+        padding: 5px;
+        margin: 0 4em 2em 3em;
+        border: none;
+        border-radius: 2.5em;
+        
+        
+        &__cont{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: right;
+            width: 55em;
+            height: 11em;
+            margin: 2em 3em 2em 3em;
+            
+            &__ele{
+                
+                background: rebeccapurple;
+                padding: 0 1em 1em 1em;
+                
+                .desc{
+                    
+                    
+                }
+            }   
+        }
+        
+        &__cont1{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            text-align: right;
+            width: 55em;
+            height: 11em;
+            margin: 0 3em 2em 3em;
+            
+            &__ele{
+                background: rebeccapurple;
+                padding: 0 1em 1em 1em;
+                
+            }   
+        }
+    }
+}
+
+.imag{
+    width: 7.1em;
+    height: 7.1em;
+}
+
+.product{
+    
+    &__img{
+        
+        background: url("/images/back3.png");
+        
+    }
+    
+}
+
+
+
+
