@@ -1,8 +1,14 @@
+/** Carga de las tipografias usadas en el proyecto**/
+
+@font-face {
+    font-family: "NIRVANA";
+    src: url('tipografias/nirvana.ttf'); /* IE9 Compat Modes */
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 
 
@@ -108,12 +114,6 @@ a{
         align-items:flex-start;
         padding-bottom: 1.5em;
         color: #E1AC33;
-        
-        
-        @font-face {
-            font-family: "NIRVANA";
-            src: url("nirvana.ttf");
-        }
         
         p {     
             font-family: "NIRVANA";
@@ -288,7 +288,7 @@ a{
     }
     
     li{
-        background: fuchsia;  
+    
         padding: 0;
         list-style-type: none;
         width: 7em;
@@ -306,7 +306,7 @@ a{
         width: 7em;
         margin: 1em 0;
         align-self: center;
-        background: gray;
+        text-align: center;
         justify-content: space-between;
         list-style-type: none;
         padding: 0;

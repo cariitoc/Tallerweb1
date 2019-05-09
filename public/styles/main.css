@@ -1,3 +1,6 @@
+
+
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -130,13 +133,6 @@ a {
           align-items: flex-start;
   padding-bottom: 1.5em;
   color: #E1AC33;
-}
-
-@font-face {
-  .banner__title {
-    font-family: "NIRVANA";
-    src: url("nirvana.ttf");
-  }
 }
 
 .banner__title p {
@@ -324,7 +320,6 @@ a {
 }
 
 .map li {
-  background: fuchsia;
   padding: 0;
   list-style-type: none;
   width: 7em;
@@ -347,7 +342,7 @@ a {
   margin: 1em 0;
   -ms-flex-item-align: center;
       align-self: center;
-  background: gray;
+  text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

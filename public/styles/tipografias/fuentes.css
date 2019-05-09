@@ -1,0 +1,18 @@
+/** Carga de las tipografias usadas en el proyecto**/
+
+@font-face {
+    font-family: "NIRVANA";
+    src: url('nirvana.otf');
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url("HelveticaNeue-LightExt.ttf");
+    /* IE9 Compat Modes */
+}
+
+@font-face {
+    font-family: "Helvetica Nue";
+    src: url("HelveticaNeue-MediumCond.otf");
+    /* IE9 Compat Modes */
+}
