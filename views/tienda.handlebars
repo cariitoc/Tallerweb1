@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    
+
     <header class="nav">
-        <img src="images/logo.png" alt="" class="logo">
+        <img src="/images/logo.png" alt="" class="logo">
         <ul class="nav__list">
             <li class="nav__element"><a href="#">HOME</a></li>
             <li class="nav__element"><a href="#">MUSIC</a></li>
@@ -22,134 +22,105 @@
             <li class="nav__element"><a href="#">VIDEOS</a></li>
             <li class="nav__element"><a href="#">MAILINGLIST</a></li>
             <li class="nav__element"><a href="#">MERCH</a></li>
-            
-            <li class="nav__element">
-                <a href="#">
-                    <img src="images/twitter.png" alt="">
-                </a>
-            </li>
-            
-            <li class="nav__element">
-                <a href="#">
-                    <img src="images/facebook.png" alt="">
-                </a>
-            </li>
-            
-            <li class="nav__element">
-                <a href="#">
-                    <img src="images/youtube.png" alt="">
-                </a>
-            </li>
-            
-        </li>
-    </ul>
-</header>
 
-<section class="banner">
+            <li class="nav__element">
+                <a href="#">
+                    <img src="/images/twitter.png" alt="">
+                </a>
+            </li>
 
-    <section class="banner__section">
-     <h1 class="banner__section__h1" >Store</h1>
+            <li class="nav__element">
+                <a href="#">
+                    <img src="/images/facebook.png" alt="">
+                </a>
+            </li>
+
+            <li class="nav__element">
+                <a href="#">
+                    <img src="/images/youtube.png" alt="">
+                </a>
+            </li>
+
+            </li>
+        </ul>
+    </header>
+
+    <section class="banner">
+
+        <section class="banner__section">
+            <h1 class="banner__section__h1">Store</h1>
+        </section>
+
+        <article class="banner__descripcion">
+            <div class="banner__filtros">
+                <div class="banner__title">
+                    <h2 class="banner__title__h1">Categories</h2>
+                </div>
+
+                <div class="filtro__descripcion">
+                    <p>Best sellers</p>
+                    <ul class="filtro__opciones">
+                        <li class="filtro__opciones__opcion"><a href="/temporada/Semana">Week</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/temporada/Mes">Month</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/temporada/Año">Year</a></li>
+                    </ul>
+                </div>
+
+                <div class="filtro__descripcion">
+                    <p>Price</p>
+                    <ul class="filtro__opciones">
+                        <li class="filtro__opciones__opcion"><a href="/precio/50">Since 50,00</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/precio/100">Since 100,00</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/precio/200">Since 200,00</a></li>
+                    </ul>
+                </div>
+
+                <div class="filtro__descripcion">
+                    <p>Product</p>
+                    <ul class="filtro__opciones">
+                        <li class="filtro__opciones__opcion"><a href="/categoria/Tshirt">Tshirt</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/categoria/CD">CD</a></li>
+                        <li class="filtro__opciones__opcion"><a href="/categoria/">Card</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="banner__products">
+                {{#each productos}}
+               
+                    <article class="view__producto__item">
+                         <a href="/producto/{{nombre}}">
+                        <section class="producto__item__imagen">
+                            <img src="/{{imagen}}" alt="producto" />
+                        </section>
+
+                        <section class="producto__item__desc">
+                            <h4 class="producto__item__desc__titulo"><strong>{{nombre}}</strong></h4>
+                            <h6 class="producto__item__desc__categoria">{{categoria}}</h6>
+                            <h6 class="producto__item__desc__precio">{{precio}}</h6>
+                        </section>
+                        </a>
+                    </article>
+                
+
+                {{/each}}
+            </div>
+
+
+
+
+            </div>
+
+
+
+
+
+
+        </article>
+
     </section>
-    
-    <article class="banner__descripcion">
 
-
-        <section class="banner__info">
-            
-            <div class="banner__title">
-                <h1 class="banner__title__h2">Categories</h1>
-            </div>
-            
-            <div class="banner__descript">
-                <h2>Best sellers</h2>
-                <p>Week</p>
-                <p>Month</p>
-                <p>Year</p>
-            </div>
-            
-            <div class="banner__descript">
-                <h2>Price</h2>
-                <p>Since 50,00</p>
-                <p>Since 100,00</p>
-                <p>Since 200,00</p>
-            </div>
-
-            <div class="banner__descript">
-                <h2>Product</h2>
-                <p>Tshirt</p>
-                <p>CD</p>
-                <p>Card</p>
-            </div>
-        </section>
-    
-        
-        <section class="banner__img">
-            
-            <section class="banner__img__cont">
-                <section class="banner__img__cont__ele">
-                    <img src="images/a.png" alt="" class="imag">
-                    
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Wishkah</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">CD</h6>
-                        <h6 class="banner__img__cont__desc__h7">100,00 $USD</h6>
-                    </section>
-                </section>
-                <section class="banner__img__cont__ele">
-                    <img src="images/c.png" alt="" class="imag">
-
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Gold card</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">Card</h6>
-                        <h6 class="banner__img__cont__desc__h7">200,00 $USD</h6>
-                    </section>
-                </section>
-                <section class="banner__img__cont__ele">
-                    <img src="images/d.png" alt="" class="imag">
-
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Smiley tee</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">Tshirt</h6>
-                        <h6 class="banner__img__cont__desc__h7">50,00 $USD</h6>
-                    </section>
-                </section>
-            </section>
-            
-            <section class="banner__img__cont1">
-                <section class="banner__img__cont1__ele">
-                    <img src="images/e.png" alt="" class="imag">
-
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Vestibule tee</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">Tshirt</h6>
-                        <h6 class="banner__img__cont__desc__h7">50,00 $USD</h6>
-                    </section>
-                </section>
-                <section class="banner__img__cont1__ele">
-                    <img src="images/f.png" alt="" class="imag">
-
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Nevermine</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">CD</h6>
-                        <h6 class="banner__img__cont__desc__h7">100,00 $USD</h6>
-                    </section>
-                </section>
-                <section class="banner__img__cont1__ele">
-                    <img src="images/g.png" alt="" class="imag">
-
-                    <section class="banner__img__cont__desc">
-                        <h4 class="banner__img__cont__desc__h4"><strong>Sliver</strong></h4>
-                        <h6 class="banner__img__cont__desc__h6">CD</h6>
-                        <h6 class="banner__img__cont__desc__h7">100,00 $USD</h6>
-                    </section>
-                </section>
-            </section>
-        </section>
-        
-    </article>
-    
-</section>
-    
 
 </body>
 

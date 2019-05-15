@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/styles/tienda.css">
+    <title>NirvanaStore</title>
+</head>
+
+<body>
+
+    <header class="nav">
+        <img src="/images/logo.png" alt="" class="logo">
+        <ul class="nav__list">
+            <li class="nav__element"><a href="#">HOME</a></li>
+            <li class="nav__element"><a href="#">MUSIC</a></li>
+            <li class="nav__element"><a href="#">ABOUT</a></li>
+            <li class="nav__element"><a href="#">VIDEOS</a></li>
+            <li class="nav__element"><a href="#">MAILINGLIST</a></li>
+            <li class="nav__element"><a href="#">MERCH</a></li>
+
+            <li class="nav__element">
+                <a href="#">
+                    <img src="images/twitter.png" alt="">
+                </a>
+            </li>
+
+            <li class="nav__element">
+                <a href="#">
+                    <img src="images/facebook.png" alt="">
+                </a>
+            </li>
+
+            <li class="nav__element">
+                <a href="#">
+                    <img src="images/youtube.png" alt="">
+                </a>
+            </li>
+
+            </li>
+        </ul>
+    </header>
+
+    
+   
+
+        <form id="formulario" action="/pagar" method="POST">
+
+            <label>Nombre:</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre" value="">
+            <label>Correo:</label>
+            <input type="email" name="correo" placeholder="Ingresa tu Correo electronico" value="">
+            <label>Direccion:</label>
+            <input type="text" name="direccion" placeholder="¿Cual es tu dirección?" value="">
+            <label>Telefono:</label>
+            <input type="text" name="telefono" placeholder="Ingresa tu telefono" value="">
+            
+            <input type="hidden" name="productos" id="conproductos" value="">
+            <button type="submit">Enviar Solicitud</button>
+
+        </form>
+ 
+
+
+    <script>
+
+         //Carga de los productos al localstorage
+        var listacarrito = localStorage.getItem("listaproductos");
+        if (listacarrito == null) {
+            listacarrito = [];
+        } else {
+            listacarrito = JSON.parse(listacarrito);
+        }
+
+
+
+        let input_productos = document.querySelector("#conproductos");
+        input_productos.value = JSON.stringify(listacarrito);
+  
+    </script>
+
+</body>
+
+</html>

@@ -1,135 +1,135 @@
 [
     {
-        "Nombre": "Wishkah",
-        "Imagen": "images/a.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Semana"
+        "nombre": "Wishkah",
+        "imagen": "images/a.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Semana"
     },
     {
-        "Nombre": "Gold card",
-        "Imagen": "images/c.png",
-        "Categoria": "Card",
-        "Precio": "200",
-        "Mas vendidos": "Semana"
+        "nombre": "Gold card",
+        "imagen": "images/c.png",
+        "categoria": "Card",
+        "precio": "200",
+        "vendidos": "Semana"
     },
     {
-        "Nombre": "Smiley tee",
-        "Imagen": "images/d.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Mes"
+        "nombre": "Smiley tee",
+        "imagen": "images/d.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Vestibule tee",
-        "Imagen": "images/e.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Año"
+        "nombre": "Vestibule tee",
+        "imagen": "images/e.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Nevermine",
-        "Imagen": "images/f.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Mes"
+        "nombre": "Nevermine",
+        "imagen": "images/f.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Sliver",
-        "Imagen": "images/g.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Año"
+        "nombre": "Sliver",
+        "imagen": "images/g.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Utero",
-        "Imagen": "images/h.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Año"
+        "nombre": "Utero",
+        "imagen": "images/h.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Unplugged",
-        "Imagen": "images/i.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Año"
+        "nombre": "Unplugged",
+        "imagen": "images/i.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Black",
-        "Imagen": "images/j.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Mes"
+        "nombre": "Black",
+        "imagen": "images/j.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Heart",
-        "Imagen": "images/k.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Semana"
+        "nombre": "Heart",
+        "imagen": "images/k.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Semana"
     },
     {
-        "Nombre": "Silver",
-        "Imagen": "images/l.png",
-        "Categoria": "Card",
-        "Precio": "200",
-        "Mas vendidos": "Año"
+        "nombre": "Silver",
+        "imagen": "images/l.png",
+        "categoria": "Card",
+        "precio": "200",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Bronze",
-        "Imagen": "images/m.png",
-        "Categoria": "Card",
-        "Precio": "200",
-        "Mas vendidos": "Semana"
+        "nombre": "Bronze",
+        "imagen": "images/m.png",
+        "categoria": "Card",
+        "precio": "200",
+        "vendidos": "Semana"
     },
     {
-        "Nombre": "Maniqui",
-        "Imagen": "images/n.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Semana"
+        "nombre": "Maniqui",
+        "imagen": "images/n.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Semana"
     },
     {
-        "Nombre": "Circle",
-        "Imagen": "images/o.png",
-        "Categoria": "Tshirt",
-        "Precio": "50",
-        "Mas vendidos": "Mes"
+        "nombre": "Circle",
+        "imagen": "images/o.png",
+        "categoria": "Tshirt",
+        "precio": "50",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Incesticide",
-        "Imagen": "images/p.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Mes"
+        "nombre": "Incesticide",
+        "imagen": "images/p.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Paramount",
-        "Imagen": "images/q.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Año"
+        "nombre": "Paramount",
+        "imagen": "images/q.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Año"
     },
     {
-        "Nombre": "Reading",
-        "Imagen": "images/r.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Mes"
+        "nombre": "Reading",
+        "imagen": "images/r.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Bleach",
-        "Imagen": "images/s.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Mes"
+        "nombre": "Bleach",
+        "imagen": "images/s.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Mes"
     },
     {
-        "Nombre": "Seven",
-        "Imagen": "images/t.png",
-        "Categoria": "CD",
-        "Precio": "100",
-        "Mas vendidos": "Año"
+        "nombre": "Seven",
+        "imagen": "images/t.png",
+        "categoria": "CD",
+        "precio": "100",
+        "vendidos": "Año"
     }
 ]

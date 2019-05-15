@@ -92,115 +92,25 @@ a{
     }
     
     
-    &__title{
-        display: flex;
-        flex-direction: row;
-        align-items:flex-start;
-        padding-bottom: 1.5em;
-        color: #E1AC33;
-    }
-    
     &__descripcion{
         position: relative;
         display: flex;
         flex-direction: row;
         padding-top: 1em;
-        
     }
     
-    &__info{  
-        background: rgba(255, 255, 255, 0.562);
-        width: 25%;
-        margin: 0 1em 5em 4em;
-        border: none;
-        border-radius: 2.5em;
-    }
-    
-    
-    &__descript{
-        padding: 2em 3em 2em 3em;
-        color: white;
-        font-family: "NIRVANA";
-        h2{    
-            font-family: "NIRVANA";        
-            font-size: 100%;
-            padding-bottom: 1em;
-            @font-face {
-                font-family: "NIRVANA";
-                src: url("./NIRVANA.TTF");
-                
-            }
-            
-        }
-        
-        p{ 
-            width: 19em;
-            padding-bottom: 1em;
-            font-size: 50%;
-        }
-        
-        button{  
-            font-size: 100%;
-            color: black;        
-        }
-    }
-    
-    &__img{
-        background: rgba(255, 255, 255, 0.562);
+    &__title{
         display: flex;
-        flex-direction: row;
-        width: 48em;
-        flex-wrap: wrap;
-        padding: 5px;
-        margin: 0 4em 2em 3em;
-        border: none;
-        border-radius: 2.5em;
+        justify-content: center;
         
-        
-        &__cont{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            text-align: right;
-            width: 55em;
-            height: 11em;
-            margin: 2em 3em 2em 3em;
-            
-            &__ele{
-                
-                background: rebeccapurple;
-                padding: 0 1em 1em 1em;
-                
-                .desc{
-                    
-                    
-                }
-            }   
+        &__h1{
+            padding: 5% 0 20% 0;
+            color: white;
+            font-size: 35px;
         }
         
-        &__cont1{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            text-align: right;
-            width: 55em;
-            height: 11em;
-            margin: 0 3em 2em 3em;
-            
-            &__ele{
-                background: rebeccapurple;
-                padding: 0 1em 1em 1em;
-                
-            }   
-        }
     }
-}
-
-.imag{
-    width: 7.1em;
-    height: 7.1em;
+    
 }
 
 .product{
@@ -213,6 +123,74 @@ a{
     
 }
 
+.filtro__descripcion{
+    color: white;
+    padding-left: 40px;
+    margin-bottom: 40px;
+    p{
+        font-family: "NIRVANA";
+       font-size: 30px;
+    }
+}
 
+.filtro__title{
+    h1{
+        font-family: "NIRVANA";
+    }
+}
+
+.filtro__opciones{
+    
+    padding: 0;
+    
+    &__opcion{
+        
+        list-style: url("/images/face.png");
+        
+        a{
+            color: white;
+            transition: all .5s ease;
+            
+            &:hover{
+                color: white;
+            }
+        }
+        
+    }
+}
+
+.banner__filtros{
+    width: 25%;
+    background: #905D00;
+    height: 25%;
+    margin: 10px 40px;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.banner__products{
+    width: 75%;
+    background: rgba(255, 255, 255, 0.562);
+    margin: 10px 40px;
+    border-radius: 15px;
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+
+.view__producto__item{
+    width: 28%;
+    
+    margin: 10px;
+    
+    .producto__item__imagen{
+        img{width: 100%;
+        }
+    }
+}
 
 

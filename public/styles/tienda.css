@@ -104,21 +104,6 @@ a {
   background: #B77A00;
 }
 
-.banner__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-bottom: 1.5em;
-  color: #E1AC33;
-}
-
 .banner__descripcion {
   position: relative;
   display: -webkit-box;
@@ -131,116 +116,89 @@ a {
   padding-top: 1em;
 }
 
-.banner__info {
-  background: rgba(255, 255, 255, 0.562);
-  width: 25%;
-  margin: 0 1em 5em 4em;
-  border: none;
-  border-radius: 2.5em;
+.banner__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.banner__descript {
-  padding: 2em 3em 2em 3em;
+.banner__title__h1 {
+  padding: 5% 0 20% 0;
   color: white;
-  font-family: "NIRVANA";
-}
-
-.banner__descript h2 {
-  font-family: "NIRVANA";
-  font-size: 100%;
-  padding-bottom: 1em;
-}
-
-@font-face {
-  .banner__descript h2 {
-    font-family: "NIRVANA";
-    src: url("./NIRVANA.TTF");
-  }
-}
-
-.banner__descript p {
-  width: 19em;
-  padding-bottom: 1em;
-  font-size: 50%;
-}
-
-.banner__descript button {
-  font-size: 100%;
-  color: black;
-}
-
-.banner__img {
-  background: rgba(255, 255, 255, 0.562);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 48em;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 5px;
-  margin: 0 4em 2em 3em;
-  border: none;
-  border-radius: 2.5em;
-}
-
-.banner__img__cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: right;
-  width: 55em;
-  height: 11em;
-  margin: 2em 3em 2em 3em;
-}
-
-.banner__img__cont__ele {
-  background: rebeccapurple;
-  padding: 0 1em 1em 1em;
-}
-
-.banner__img__cont1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: right;
-  width: 55em;
-  height: 11em;
-  margin: 0 3em 2em 3em;
-}
-
-.banner__img__cont1__ele {
-  background: rebeccapurple;
-  padding: 0 1em 1em 1em;
-}
-
-.imag {
-  width: 7.1em;
-  height: 7.1em;
+  font-size: 35px;
 }
 
 .product__img {
   background: url("/images/back3.png");
+}
+
+.filtro__descripcion {
+  color: white;
+  padding-left: 40px;
+  margin-bottom: 40px;
+}
+
+.filtro__descripcion p {
+  font-family: "NIRVANA";
+  font-size: 30px;
+}
+
+.filtro__title h1 {
+  font-family: "NIRVANA";
+}
+
+.filtro__opciones {
+  padding: 0;
+}
+
+.filtro__opciones__opcion {
+  list-style: url("/images/face.png");
+}
+
+.filtro__opciones__opcion a {
+  color: white;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.filtro__opciones__opcion a:hover {
+  color: white;
+}
+
+.banner__filtros {
+  width: 25%;
+  background: #905D00;
+  height: 25%;
+  margin: 10px 40px;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.banner__products {
+  width: 75%;
+  background: rgba(255, 255, 255, 0.562);
+  margin: 10px 40px;
+  border-radius: 15px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.view__producto__item {
+  width: 28%;
+  margin: 10px;
+}
+
+.view__producto__item .producto__item__imagen img {
+  width: 100%;
 }
 /*# sourceMappingURL=tienda.css.map */
