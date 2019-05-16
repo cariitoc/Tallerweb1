@@ -6,28 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/tipografias/fuentes.css">
+    <link rel="stylesheet" href="/styles/tienda.css">
     <title>NirvanaStore</title>
 </head>
+
+
+<header class="nav">
+    <img src="/images/logo.png" alt="" class="logo">
+    <ul class="nav__list">
+        <li class="nav__element"><a href="#">HOME</a></li>
+        <li class="nav__element"><a href="#">MUSIC</a></li>
+        <li class="nav__element"><a href="#">ABOUT</a></li>
+        <li class="nav__element"><a href="#">VIDEOS</a></li>
+        <li class="nav__element"><a href="#">MAILINGLIST</a></li>
+        <li class="nav__element"><a href="#">MERCH</a></li>
+
+        <li class="nav__element">
+            <a href="#">
+                <img src="/images/twitter.png" alt="">
+            </a>
+        </li>
+
+        <li class="nav__element">
+            <a href="#">
+                <img src="/images/facebook.png" alt="">
+            </a>
+        </li>
+
+        <li class="nav__element">
+            <a href="#">
+                <img src="/images/youtube.png" alt="">
+            </a>
+        </li>
+
+        </li>
+    </ul>
+</header>
 
 <body>
     <section class="product">
         <div class="product__fondo" style="background-image: url('/images/nirvana.png')">
+            <div class="cont-product">
 
-        <div class="product__img">
-            <img src="/{{imagen}}" alt="">
+                <div class="product__img">
+                    <img class="dato_imagen" src="/{{imagen}}" alt="">
+                </div>
+
+                <div class="product__description">
+                    <div>
+                        <h1 class="dato_nombre">{{nombre}}</h1>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nisi vel, reiciendis modi
+                            porro
+                            quibusdam sed illum commodi iusto architecto, accusantium dolorem in similique natus
+                            repellendus
+                            debitis corrupti laboriosam qui!</p>
+                    </div>
+
+                    <div>
+                        <h2 class="dato_precio">$ {{precio}}</h2>
+                    </div>
+                    <div>
+
+                        <button class="button"><strong>Buy Now</strong></button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="product__description">
-            <p></p>
-
-            <p>
-                {{precio}}
-            </p>
-
-            <button class="button"><strong>Buy Now</strong></button>
-        </div>
-</div>
 
     </section>
+
+    
+
+    <footer class="map">
+        <div class="map__img">
+            <img src="/images/logo.png" alt="" class="logoFinal">
+        </div>
+
+        <div class="map__menu">
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>HOME</strong></a></li>
+                <li><a class="map__element" href="#">MUSIC</a></li>
+                <li><a class="map__element" href="#">ABOUT</a></li>
+                <li><a class="map__element" href="#">VIDEOS</a></li>
+                <li><a class="map__element" href="#">MAILINGLIST</a></li>
+                <li><a class="map__element" href="#">MERCH</a></li>
+            </ul>
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MUSIC</strong></a></li>
+                <li><a class="map__element" href="#">ALL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">STUDIO</a></li>
+                <li><a class="map__element" href="#">DVD / BLUE-RAY</a></li>
+                <li><a class="map__element" href="#">DELUXE EDITION</a></li>
+                <li><a class="map__element" href="#">COMPILATION</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>ABOUT</strong></a></li>
+                <li><a class="map__element" href="#">NIRVANA TIMELINE</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>VIDEOS</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MAILINGLIST</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MERCH</strong></a></li>
+                <li><a class="map__element" href="#">HOME</a></li>
+                <li><a class="map__element" href="#">APPAREL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">ACCESSORIES</a></li>
+                <li><a class="map__element" href="#">SPECIALS</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+        <ul class="map__icon">
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/twitter.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/facebook.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/youtube.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+
+        <p class="map__final">© Copyright 2016 Universal Music Enterprises. All right reserved. | Privacy Policy | Terms
+            of Use</p>
+
+    </footer>
+
+
+    <script src="/javascript/productos.js"></script>
 
 </body>
 

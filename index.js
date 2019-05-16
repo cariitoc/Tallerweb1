@@ -19,7 +19,7 @@ const test = require("assert");
 // Connection url
 const url = "mongodb://localhost:27017";
 // db Name
-const dbName = "tienda";
+const dbName = "tienda2";
 var db;
 
 // Connect using MongoClient
@@ -61,6 +61,14 @@ app.get('/tienda', function (request, response) {
     response.render('tienda', contexto);
   });
 
+});
+
+app.get("/carrito", function(request, response) {
+  response.render("carrito", {});
+});
+
+app.get("/checkout", function(request, response) {
+  response.render("checkout", {});
 });
 
 app.get('/temporada/:item?', function (request, response) {
@@ -145,6 +153,39 @@ app.get('/producto/:item?', function (request, response) {
     response.render('producto', contexto[0]);
   });
 
+});
+
+
+/**Envio de formulario---------------------------------------------------------------------------------- */
+
+app.post("/pagar", function(request, response) {
+  // crear un archivo con la información del usuario
+  console.log(request.body);
+
+  /*
+  let productos = JSON.parse(request.body.productos);
+  console.log(productos)
+  if(productos == null || productos == undefined){
+    productos = [];
+  }*/
+
+  var pedido = {
+    nombre: request.body.nombre,
+    correo: request.body.correo,
+    direccion: request.body.direccion,
+    telefono: request.body.telefono,
+    fecha: new Date(),
+    estado: "Pendiente"
+  };
+
+  var collection = db.collection("pedidos");
+  collection.insertOne(pedido, function(err) {
+    assert.equal(err, null);
+
+    console.log("pedido guardado");
+    response.redirect("/tienda");
+  });
+ 
 });
 
 // iniciar el servidor en el puerto 3000

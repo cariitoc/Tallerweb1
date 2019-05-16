@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NirvanaStore</title>
+    <link rel="stylesheet" href="/styles/main.css">
     <link rel="stylesheet" href="/styles/tipografias/fuentes.css">
     <link rel="stylesheet" href="/styles/tienda.css">
 </head>
@@ -84,13 +85,19 @@
                     </ul>
                 </div>
 
+                <div class="filtro__descripcion">
+                    <a href="/carrito">
+                        <button>View Cart</button>
+                    </a>
+                </div>
+
             </div>
 
             <div class="banner__products">
                 {{#each productos}}
-               
-                    <article class="view__producto__item">
-                         <a href="/producto/{{nombre}}">
+
+                <article class="view__producto__item">
+                    <a href="/producto/{{nombre}}">
                         <section class="producto__item__imagen">
                             <img src="/{{imagen}}" alt="producto" />
                         </section>
@@ -100,9 +107,9 @@
                             <h6 class="producto__item__desc__categoria">{{categoria}}</h6>
                             <h6 class="producto__item__desc__precio">{{precio}}</h6>
                         </section>
-                        </a>
-                    </article>
-                
+                    </a>
+                </article>
+
 
                 {{/each}}
             </div>
@@ -121,6 +128,85 @@
 
     </section>
 
+    <footer class="map">
+        <div class="map__img">
+            <img src="/images/logo.png" alt="" class="logoFinal">
+        </div>
+
+        <div class="map__menu">
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>HOME</strong></a></li>
+                <li><a class="map__element" href="#">MUSIC</a></li>
+                <li><a class="map__element" href="#">ABOUT</a></li>
+                <li><a class="map__element" href="#">VIDEOS</a></li>
+                <li><a class="map__element" href="#">MAILINGLIST</a></li>
+                <li><a class="map__element" href="#">MERCH</a></li>
+            </ul>
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MUSIC</strong></a></li>
+                <li><a class="map__element" href="#">ALL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">STUDIO</a></li>
+                <li><a class="map__element" href="#">DVD / BLUE-RAY</a></li>
+                <li><a class="map__element" href="#">DELUXE EDITION</a></li>
+                <li><a class="map__element" href="#">COMPILATION</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>ABOUT</strong></a></li>
+                <li><a class="map__element" href="#">NIRVANA TIMELINE</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>VIDEOS</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MAILINGLIST</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MERCH</strong></a></li>
+                <li><a class="map__element" href="#">HOME</a></li>
+                <li><a class="map__element" href="#">APPAREL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">ACCESSORIES</a></li>
+                <li><a class="map__element" href="#">SPECIALS</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+        <ul class="map__icon">
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/twitter.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/facebook.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="/images/youtube.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+
+        <p class="map__final">© Copyright 2016 Universal Music Enterprises. All right reserved. | Privacy Policy | Terms
+            of Use</p>
+
+    </footer>
 
 </body>
 
