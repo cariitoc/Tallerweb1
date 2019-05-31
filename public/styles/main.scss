@@ -647,7 +647,10 @@ body{
 }
 
 .juegos{
-  padding-left:300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background: #8F8F8F;
 
 }
@@ -671,5 +674,12 @@ body{
     font-size: 1.8em;
 }
 
-
+.titulo-juego{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
 
