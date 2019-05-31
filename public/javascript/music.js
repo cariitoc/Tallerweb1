@@ -7,17 +7,17 @@
             juego.incluirEn("#juego");
 
 
-            let juego2 = new Ruleta();
-            juego2.agregar(200, 200, "/img/nir-01.png", "/sound/heart/bateria.mp3");
-            juego2.agregar(200, 500, "/img/nir-09.png", "/sound/heart/guitarra.mp3");
-            juego2.agregar(1000, 200, "/img/nir-02.png", "/sound/heart/voz.mp3");
-            juego2.incluirEn("#juego2");
-
             let juego3 = new Ruleta();
-            juego3.agregar(200, 200, "/img/nir-07.png", "/sound/smells/bateria.mp3");
-            juego3.agregar(200, 500, "/img/nir-06.png", "/sound/smells/bajo.mp3");
-            juego3.agregar(1000, 200, "/img/nir-05.png", "/sound/smells/voz.mp3");
+            juego3.agregar(200, 200, "/img/nir-01.png", "/sound/heart/bateria.mp3");
+            juego3.agregar(200, 500, "/img/nir-09.png", "/sound/heart/guitarra.mp3");
+            juego3.agregar(1000, 200, "/img/nir-02.png", "/sound/heart/voz.mp3");
             juego3.incluirEn("#juego3");
+
+            let juego2 = new Ruleta();
+            juego2.agregar(200, 200, "/img/nir-07.png", "/sound/smells/bateria.mp3");
+            juego2.agregar(200, 500, "/img/nir-06.png", "/sound/smells/bajo.mp3");
+            juego2.agregar(1000, 200, "/img/nir-05.png", "/sound/smells/voz.mp3");
+            juego2.incluirEn("#juego2");
 
 
             
