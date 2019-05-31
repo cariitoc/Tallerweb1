@@ -87,7 +87,6 @@ a {
             font-family: "Helvetica";
             font-size: 4em;
             padding: 0.2em 3em 0.2em 1em;
-            background: #B77A00;
         }
     }
 
@@ -146,6 +145,10 @@ a {
         font-family: "NIRVANA";
         font-size: 30px;
     }
+
+    &__carro{
+        padding-left: 41px;
+    }
 }
 
 .filtro__title {
@@ -173,6 +176,7 @@ a {
 
     }
 }
+
 
 .banner__filtros {
     width: 25%;

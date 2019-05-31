@@ -101,7 +101,6 @@ a {
   font-family: "Helvetica";
   font-size: 4em;
   padding: 0.2em 3em 0.2em 1em;
-  background: #B77A00;
 }
 
 .banner__descripcion {
@@ -163,6 +162,10 @@ a {
 .filtro__descripcion p {
   font-family: "NIRVANA";
   font-size: 30px;
+}
+
+.filtro__descripcion__carro {
+  padding-left: 41px;
 }
 
 .filtro__title h1 {
