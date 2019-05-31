@@ -70,6 +70,53 @@
             TweenMax.to("#juego3", 2, { with: 1280, height: 720, opacity: 1 });
         });
 
+        $(".btn__juego1").mouseover(function () {
+
+            var tl = new TimelineMax();    //shorter syntax!
+            tl.to(this,0.3, {scale:1.2}, {scale:1.2});
+           
+    
+        });
+    
+          
+        $(".btn__juego1").mouseout(function () {
+    
+            var tl = new TimelineMax();    //shorter syntax!
+          tl.to(this, 0.3, {scale:1}, {scale:1});
+    
+        });
+
+        $(".btn__juego2").mouseover(function () {
+
+            var tl = new TimelineMax();    //shorter syntax!
+            tl.to(this,0.3, {scale:1.2}, {scale:1.2});
+           
+    
+        });
+    
+          
+        $(".btn__juego2").mouseout(function () {
+    
+            var tl = new TimelineMax();    //shorter syntax!
+          tl.to(this, 0.3, {scale:1}, {scale:1});
+    
+        });
+
+        $(".btn__juego3").mouseover(function () {
+
+            var tl = new TimelineMax();    //shorter syntax!
+            tl.to(this,0.3, {scale:1.2}, {scale:1.2});
+           
+    
+        });
+    
+          
+        $(".btn__juego3").mouseout(function () {
+    
+            var tl = new TimelineMax();    //shorter syntax!
+          tl.to(this, 0.3, {scale:1}, {scale:1});
+    
+        });
 
 
 
