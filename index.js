@@ -24,7 +24,7 @@ var db;
 
 // Connect using MongoClient
 MongoClient.connect(
-  "mongodb+srv://cariitoc98:cluster0-fzzne.mongodb.net/tienda",
+  "mongodb+srv://cluster0-fzzne.mongodb.net/tienda",
   {
 auth:{
   user:"cariitoc98",
