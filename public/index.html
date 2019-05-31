@@ -247,16 +247,31 @@
         TweenMax.to(".banner__video video", 2, { x: 150 });
 
         var tl = new TimelineMax();    //shorter syntax!
-        tl.to(".cards", .3, { y: 3, ease: Power1.easeOut });
-        tl.to(".cards", .3, { y: -3, ease: Power1.easeOut });
-        tl.to(".cards", .3, { y: -3, ease: Power1.easeOut });
+        tl.to(".cards", .3, { y: 3, ease: Power0.easeOut });
+        tl.to(".cards", .3, { y: -3, ease: Power0.easeOut });
+        tl.to(".cards", .3, { y: 3, ease: Power0.easeOut });
         tl.to(".cards", .3, {
-            y: -3, ease: Power1.easeOut, onComplete:  ()=> {
+            y: -3, ease: Power0.easeOut, onComplete: () => {
                 tl.restart();
             }
         });
 
-        
+        $(".button").mouseover(function () {
+
+            var tl = new TimelineMax();    //shorter syntax!
+            tl.to(this, 0.2, { scale: 1.1 }, { scale: 1.1 });
+
+
+        });
+
+
+        $(".button").mouseout(function () {
+
+            var tl = new TimelineMax();    //shorter syntax!
+            tl.to(this, 0.5, { scale: 1 }, { scale: 1 });
+
+        });
+
 
 
 /*
