@@ -447,8 +447,7 @@ a{
     align-items: center;
     
 }
-.btn__juego1{
-}
+
 
 
 body{
@@ -456,6 +455,10 @@ body{
     flex-direction: column;
     justify-content: space-between;
 
+}
+
+.juegos{
+    background-image: url("/images/baby.png")
 }
 
 
