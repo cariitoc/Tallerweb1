@@ -23,8 +23,18 @@ const dbName = "tienda";
 var db;
 
 // Connect using MongoClient
-MongoClient.connect(url, function (err, client) {
+MongoClient.connect(
+  "mongodb+srv://cariitoc98:cluster0-fzzne.mongodb.net/tienda",
+  {
+auth:{
+  user:"cariitoc98",
+  password:"cariitoc98",
+
+}
+  }, function (err, client) {
   db = client.db(dbName);
+
+  app.listen(process.env.PORT || 1234);
 
   //client.close();
 });
