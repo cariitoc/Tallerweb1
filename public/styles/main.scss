@@ -273,21 +273,35 @@ a{
 }
 
 
-.specificaciones{
+.specifications{
     
     display: flex;
     background: black;
     padding: 8em 9.5em;  
     justify-content: space-between;
+    text-align: center;
     
     &__table{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px 0;
         background: #252223;
         color: white;
         width: 20em;
         height: 27em;
-        padding: 5em;
         border-radius: 30px;
-        justify-content: space-between;
+        
+        &__button{
+            color: white;
+            width: 12em;
+            height: 3.5em;
+            background: #E1AC33;
+            border-radius: 1.4em;
+            border: 0;
+            transition: all .5s ease;
+        }
     }
     
     .table--black{
@@ -301,34 +315,202 @@ a{
     .table--yellow{
         background: #905D00;
     }   
+    
+    &__title{
+        font-size: 1.2em;
+        font-weight:bold;
+        padding-top: 1em;
+    }
+    
+    li{
+        text-align: initial;     
+        font-size: 1.1em;
+        width: 10em;
+        list-style-image: url('../images/face.png');   
+    }
 }
 
 .benefits{
-    display: flex;
-    justify-content: center;
-    background-image: url("../images/back.png");
+    
+    background-image: url("../images/back2.png");
     background-size: cover;
-    padding: 160px 0;
-    height: 100%;
+    
+    &__title{
+        color: #E1AC33;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    &__cont{
+        display: flex;
+        justify-content: center;
+        height: 600px;
+        align-items: center;        
+    }
     
     &__info{  
+        background: #9898988c; 
         color: white;
         width:18em;
         height: 26em;
         border-radius: 30px;
-        
+        margin: 0 1em;
+        text-align: center;
         
         img{
             width:10em;
-            margin: 2em 4em;
+            margin: 2em 4em 4em 4em;
         }
         
-        h1{
-            background: green;
+        p{
+            font-family: "NIRVANA";
+            font-size: 2.5em;
+            padding-top: 0.5em;
+        }
+        
+        .button{
+            color: white;
+            border-radius: 1em;
+            align-items: baseline;
         }
     }   
 }
 
+.gallery{
+    background: black;
+    
+    
+    &__title{
+        padding: 3em 1em;
+        color: #E1AC33;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    
+    &__cont{
+        flex-wrap: wrap;
+        display: flex;    
+        height: 475px;
+        margin: 0 4em 3em 4em;
+        
+        &__second{
+            margin: 1.6em;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        &__third{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        &__fourt{
+            margin: 2em 0 3em 1.5em; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        &__button{
+            text-align:  center;
+            padding: 0 2em 3em 2em;
+            
+            &__p{
+                font-size: 2em;
+            }
+            
+        }
+    }
+    
+}
+
+.interaction{
+    
+    &__video{
+        
+        video{
+            display: none;
+        }
+    }
+}
+
+.newsletter{
+    
+    width: 100%;
+    text-align: center;
+    
+    &__title{
+        font-family: "NIRVANA";
+        font-size: 3em;
+        padding: 0.5em;
+    }
+    
+    &__p{
+        font-size: 1.5em;
+    }
+    
+    &__input{
+        text-align: center;
+        width: 100%;
+
+        padding: 1em;
+        border-radius: 1em;
+        
+        &__text{
+            border-radius: 0.5em;
+        }
+    }
+
+    &__buttonCont{
+        margin: 1em;
+        text-align: center;
+    }
+}
+
+.publicidad{
+    
+    display: flex;
+    background: #A48222;
+    
+    &__info{
+        color: white;
+        width: 30%;
+        margin: 2em 5em; 
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    h1{
+        padding-bottom: 0.5em;
+        padding-top: 0.5em;
+        font-size: 2em;
+    }
+    
+    p{
+        padding-bottom: 1em;
+        width: 10em;    
+        text-align: center;
+        margin: auto;
+        font-size: 1.5em;
+    }
+    
+    .button{
+        background: white;
+        width: 9em;
+        border-radius: 1em;
+        font-size: 1em;
+        
+        
+    }
+    
+    &__img{
+        padding:0 0.5em; 
+        margin: 1.5em 0;
+    }
+}
 
 .publicidad{
     
