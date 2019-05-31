@@ -11,6 +11,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body{
+    height: 100%;
+}
+
 
 
 a{
@@ -436,15 +440,22 @@ a{
     width: 14em;
 }
 
-.botones{
+.botones{  
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 .btn__juego1{
-    padding: 1000px;
 }
 
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
+}
 
 
