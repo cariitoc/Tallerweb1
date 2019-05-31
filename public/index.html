@@ -48,33 +48,33 @@
 
         <section class="banner__video">
             <video class="video" src="./videos/video4.mp4" autoplay preload muted></video>
-    </section>
-
-    <article class="banner__descripcion">
-        <section class="banner__info">
-
-            <div class="banner__title">
-                <p>MUSICAL GIFT</p>
-                <p class="card">Card</p>
-            </div>
-
-            <div class="banner__descript">
-                <h2>“live the paramount”</h2>
-                <p class="banner__p">Get the best benefits and know more about nirvana with their products.</p>
-                <p class="banner__p">Since $ 50.00</p>
-                <button class="button"><strong>Buy Now</strong></button>
-            </div>
         </section>
 
-        <section class="banner__img">
-            <img src="images/cards.png" alt="">
-        </section>
+        <article class="banner__descripcion">
+            <section class="banner__info">
 
-    </article>
+                <div class="banner__title">
+                    <p>MUSICAL GIFT</p>
+                    <p class="card">Card</p>
+                </div>
+
+                <div class="banner__descript">
+                    <h2>“live the paramount”</h2>
+                    <p class="banner__p">Get the best benefits and know more about nirvana with their products.</p>
+                    <p class="banner__p">Since $ 50.00</p>
+                    <button class="button"><strong>Buy Now</strong></button>
+                </div>
+            </section>
+
+            <section class="banner__img">
+                <img src="images/cards.png" alt="" class="cards">
+            </section>
+
+        </article>
 
     </section>
 
-    <section class="specificaciones" >
+    <section class="specificaciones">
         <section class="specificaciones__table table--black">
             <h1><strong>Nirvana Free $10.000</strong></h1>
             <p>Without discount and listen with quality and can not be accessed unpublished material.</p>
@@ -95,7 +95,7 @@
     </section>
 
 
-    <section class="benefits" >
+    <section class="benefits">
 
         <section class="benefits__info ">
             <h1>Nirvana Free $00.000</h1>
@@ -226,11 +226,89 @@
 
         </ul>
 
-        <p class="map__final">© Copyright 2016 Universal Music Enterprises. All right reserved. | Privacy Policy | Terms
+        <p class="map__final">© Copyright 2016 Universal Music Enterprises. All right reserved. | Privacy Policy |
+            Terms
             of Use</p>
 
     </footer>
 
+    <!--Paso 1-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script>
+
+
+        //Esto sirve para una sola animacion
+        // TweenMax.to(".cards", 2, {y:100, x:-100, rotation:360});
+
+        //Para varias
+
+        TweenMax.to(".banner__video video", 2, { x: 150 });
+
+        var tl = new TimelineMax();    //shorter syntax!
+        tl.to(".cards", 1, { y: 3, ease: Power1.easeOut });
+        tl.to(".cards", 1, { y: -3, ease: Power1.easeOut });
+        tl.to(".cards", 1, { y: -3, ease: Power1.easeOut });
+        tl.to(".cards", 1, {
+            y: -3, ease: Power1.easeOut, onComplete: function () {
+                tl.restart();
+            }
+        });
+
+
+        $(".specificaciones__table").mouseover(function () {
+            var tl = new TimelineMax();  
+        tl.to(".specificaciones__table", 1, { width: 450 , height:450 });
+    
+        });
+
+        
+        $(".specificaciones__table").mouseout(function () {
+            var tl = new TimelineMax();  
+        tl.to(".specificaciones__table", 1, { width: -700, height:-700 });
+    
+        });
+
+
+/*
+        $("button").click(function () {
+
+            var tl = new TimelineMax();
+            tl.to("h1", 2, { x: 100 });
+            tl.to("div", 2, { x: 200 }); //shorter syntax!
+
+        });
+
+        $("button").mouseover(function () {
+
+            var tl = new TimelineMax();
+            tl.to("h1", 2, { x: 100 });
+            tl.to("div", 2, { x: 200 }); //shorter syntax!
+
+        });
+
+        $("button").mouseout(function () {
+
+            var tl = new TimelineMax();
+            tl.to("h1", 2, { x: 100 });
+            tl.to("div", 2, { x: 200 }); //shorter syntax!
+
+        });
+*/
+
+
+      //click
+      //mouseover
+      //mouseout
+
+
+
+
+
+// tl.add(TweenMax.to("div", 2, { x: 100 }));
+
+    </script>
 </body>
 
 </html>

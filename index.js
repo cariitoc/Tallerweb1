@@ -19,7 +19,7 @@ const test = require("assert");
 // Connection url
 const url = "mongodb://localhost:27017";
 // db Name
-const dbName = "tienda2";
+const dbName = "tienda";
 var db;
 
 // Connect using MongoClient
