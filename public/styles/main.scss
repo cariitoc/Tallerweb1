@@ -436,8 +436,12 @@ a{
     width: 14em;
 }
 
-#juego{
-    padding: 100px;
+.botones{
+    display: flex;
+    flex-direction: row;
+}
+.btn__juego1{
+    padding: 1000px;
 }
 
 
