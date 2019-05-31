@@ -67,6 +67,10 @@ app.get("/carrito", function(request, response) {
   response.render("carrito", {});
 });
 
+app.get("/music", function(request, response) {
+  response.render("music", {});
+});
+
 app.get("/checkout", function(request, response) {
   response.render("checkout", {});
 });

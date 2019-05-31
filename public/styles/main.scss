@@ -325,13 +325,7 @@ a{
     }   
 }
 
-.container{ position: absolute;  
-overflow: hidden;
-z-index: 10;
-backface-visibility: hidden;
-transform-style: preserve-3d;
-width: 100%;
-}
+
 .publicidad{
     
     display: flex;
@@ -440,6 +434,10 @@ width: 100%;
 
 .logoFinal{
     width: 14em;
+}
+
+#juego{
+    padding: 100px;
 }
 
 

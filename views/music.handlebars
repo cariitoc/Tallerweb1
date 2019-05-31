@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Nirvana</title>
+    <link rel="stylesheet" href="/styles/tipografias/fuentes.css">
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
+
 <body>
-       <header class="nav">
-        <img src="/images/logo.png" alt="" class="logo">
+
+    <header class="nav">
+        <img src="images/logo.png" alt="" class="logo">
         <ul class="nav__list">
             <li class="nav__element"><a href="#">HOME</a></li>
-            <li class="nav__element"><a href="#">MUSIC</a></li>
+            <li class="nav__element"><a href="/music">MUSIC</a></li>
             <li class="nav__element"><a href="#">ABOUT</a></li>
             <li class="nav__element"><a href="#">VIDEOS</a></li>
             <li class="nav__element"><a href="#">MAILINGLIST</a></li>
@@ -19,24 +24,208 @@
 
             <li class="nav__element">
                 <a href="#">
-                    <img src="/images/twitter.png" alt="">
+                    <img src="images/twitter.png" alt="" class="icon">
                 </a>
             </li>
 
             <li class="nav__element">
                 <a href="#">
-                    <img src="/images/facebook.png" alt="">
+                    <img src="images/facebook.png" alt="" class="icon">
                 </a>
             </li>
 
             <li class="nav__element">
                 <a href="#">
-                    <img src="/images/youtube.png" alt="">
+                    <img src="images/youtube.png" alt="" class="icon">
                 </a>
             </li>
 
             </li>
         </ul>
     </header>
+
+    <button class="button btn__juego1">Cancion 1</button>
+    <button class="button btn__juego2">Cancion 2</button>
+    <button class="button btn__juego3">Cancion 3</button>
+
+
+    <div id="juego"></div>
+    <div id="juego2"></div>
+    <div id="juego3"></div>
+
+
+    <footer class="map">
+        <div class="map__img">
+            <img src="images/logo.png" alt="" class="logoFinal">
+        </div>
+
+        <div class="map__menu">
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>HOME</strong></a></li>
+                <li><a class="map__element" href="/music">MUSIC</a></li>
+                <li><a class="map__element" href="#">ABOUT</a></li>
+                <li><a class="map__element" href="#">VIDEOS</a></li>
+                <li><a class="map__element" href="#">MAILINGLIST</a></li>
+                <li><a class="map__element" href="#">MERCH</a></li>
+            </ul>
+
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MUSIC</strong></a></li>
+                <li><a class="map__element" href="#">ALL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">STUDIO</a></li>
+                <li><a class="map__element" href="#">DVD / BLUE-RAY</a></li>
+                <li><a class="map__element" href="#">DELUXE EDITION</a></li>
+                <li><a class="map__element" href="#">COMPILATION</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>ABOUT</strong></a></li>
+                <li><a class="map__element" href="#">NIRVANA TIMELINE</a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>VIDEOS</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MAILINGLIST</strong></a></li>
+            </ul>
+
+            <ul class="map__list">
+                <li><a class="map__element" href="#"><strong>MERCH</strong></a></li>
+                <li><a class="map__element" href="#">HOME</a></li>
+                <li><a class="map__element" href="#">APPAREL</a></li>
+                <li><a class="map__element" href="#">VINYL</a></li>
+                <li><a class="map__element" href="#">ACCESSORIES</a></li>
+                <li><a class="map__element" href="#">SPECIALS</a></li>
+            </ul>
+        </div>
+
+        </div>
+
+
+        <ul class="map__icon">
+            <li class="map__icons">
+                <a href="#">
+                    <img src="images/twitter.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="images/facebook.png" alt="">
+                </a>
+            </li>
+
+            <li class="map__icons">
+                <a href="#">
+                    <img src="images/youtube.png" alt="">
+                </a>
+            </li>
+
+        </ul>
+
+        <p class="map__final">© Copyright 2016 Universal Music Enterprises. All right reserved. | Privacy Policy |
+            Terms
+            of Use</p>
+
+    </footer>
+
+
+    <script src="/javascript/easeljs.js"></script>
+    <script src="/javascript/preloadjs.js"></script>
+    <script src="/javascript/soundjs.js"></script>
+    <script src="/javascript/tweenjs.js"></script>
+    <script src="/javascript/ruleta.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            let juego = new Ruleta();
+            juego.agregar(200, 200, "/img/nir-04.png", "/sound/comeasur/bateria.mp3");
+            juego.agregar(200, 500, "/img/nir-03.png", "/sound/comeasur/guitarra.mp3");
+            juego.agregar(1000, 200, "/img/nir-08.png", "/sound/comeasur/voz.mp3");
+            juego.incluirEn("#juego");
+
+
+            let juego2 = new Ruleta();
+            juego2.agregar(200, 200, "/img/nir-01.png", "/sound/heart/bateria.mp3");
+            juego2.agregar(200, 500, "/img/nir-09.png", "/sound/heart/guitarra.mp3");
+            juego2.agregar(1000, 200, "/img/nir-02.png", "/sound/heart/voz.mp3");
+            juego2.incluirEn("#juego2");
+
+            let juego3 = new Ruleta();
+            juego3.agregar(200, 200, "/img/nir-07.png", "/sound/smells/bateria.mp3");
+            juego3.agregar(200, 500, "/img/nir-06.png", "/sound/smells/bajo.mp3");
+            juego3.agregar(1000, 200, "/img/nir-05.png", "/sound/smells/voz.mp3");
+            juego3.incluirEn("#juego3");
+        });
+    </script>
+
+    <!--Paso 1-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+
+    <script>
+
+
+        function ocultarTodo() {
+            $("#juego").css({
+                display: "none",
+                with:"0",
+                height:"0",
+                opacity:0
+            });
+            $("#juego2").css({
+                display: "none",
+                with:"0",
+                height:"0",
+                opacity:0
+            });
+            $("#juego3").css({
+                display: "none",
+                with:"0",
+                height:"0",
+                opacity:0,
+                
+            });
+        }
+
+        ocultarTodo()
+
+
+        $(".btn__juego1").click(function () {
+            ocultarTodo();
+            $("#juego").css({
+                display: "block"
+            });
+             TweenMax.to("#juego", 2, { with:1280, height:720, opacity:1 });
+        });
+
+        $(".btn__juego2").click(function () {
+            ocultarTodo();
+            $("#juego2").css({
+                display: "block"
+            });
+              TweenMax.to("#juego2", 2, { with:1280, height:720, opacity:1 });
+        });
+
+        $(".btn__juego3").click(function () {
+            ocultarTodo();
+            $("#juego3").css({
+                display: "block"
+            });
+              TweenMax.to("#juego3", 2, { with:1280, height:720, opacity:1 });
+        });
+
+
+
+
+    </script>
+
 </body>
+
 </html>
