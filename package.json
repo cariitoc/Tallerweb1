@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/cariitoc/Tallerweb1#readme",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "express-handlebars": "^3.0.2",
     "nodemon": "^1.19.0",
     "mongodb": "^3.2.4"
